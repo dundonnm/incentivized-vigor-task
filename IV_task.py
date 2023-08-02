@@ -14,7 +14,7 @@ from IV_functions import (input_dialog, open_window, load_joystick, make_vis_sti
 from os import chdir, path
 import pickle
 import pylink
-from EyeLinkCoreGraphicsPsychoPy import EyeLinkCoreGraphicsPsychoPy
+#from EyeLinkCoreGraphicsPsychoPy import EyeLinkCoreGraphicsPsychoPy
 
 chdir('directory/to/where/code/is/saved')
 fmri=False
