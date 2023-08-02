@@ -16,7 +16,8 @@ import pickle
 import pylink
 from EyeLinkCoreGraphicsPsychoPy import EyeLinkCoreGraphicsPsychoPy
 
-chdir('/Users/asap1/Desktop/IV_task_fMRI')
+chdir('directory/to/where/code/is/saved')
+fmri=False
 
 seq=pd.read_csv('images/sequence1.csv',header=None)
 
@@ -46,15 +47,17 @@ expInfo = {"Participant" :"","Session" :"", "Date":data.getDateStr()}
 input_dialog(par,expInfo,visual,gui,core) #Dialog box
 win,par = open_window(visual,par) #Open a window
 
-el_tracker,edf_file = config_eyetracker(pylink,expInfo,EyeLinkCoreGraphicsPsychoPy,win,visual,path,event)
-
-el_tracker.openDataFile(edf_file)
-el_tracker.startRecording(1, 1, 1, 1)
+#el_tracker,edf_file = config_eyetracker(pylink,expInfo,EyeLinkCoreGraphicsPsychoPy,win,visual,path,event)
+#el_tracker.openDataFile(edf_file)
+#el_tracker.startRecording(1, 1, 1, 1)
 
 ##WILL NOW WAIT FOR SCANNER TRIGGER
 
-serial_port = get_serial_port()
-first_tr = wait4tr_start(serial_port[0],core)
+if fmri:
+  serial_port = get_serial_port()
+  first_tr = wait4tr_start(serial_port[0],core)
+else:
+  first_tr = core.getTime()
 par["first_tr"]=first_tr
 
 joy = load_joystick() #Load joystick
@@ -112,8 +115,8 @@ with open(file_out,"wb") as fp:
 if expInfo["Session"]=='4':
     bonus_screen(win,par,vis_par,core,visual,np,event,expInfo,imgComponents,cursor)
 
-local_edf='/Users/asap1/Desktop/IV_task_fMRI/eyeData/'+edf_file
-el_tracker.receiveDataFile(edf_file, local_edf)
-el_tracker.closeDataFile()
-el_tracker.stopRecording()
-el_tracker.close()
+#local_edf='/Users/asap1/Desktop/IV_task_fMRI/eyeData/'+edf_file
+#el_tracker.receiveDataFile(edf_file, local_edf)
+#el_tracker.closeDataFile()
+#el_tracker.stopRecording()
+#el_tracker.close()
