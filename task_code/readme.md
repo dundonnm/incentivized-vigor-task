@@ -7,7 +7,7 @@
 
 **RUNNING THE TASK:**
 
-Practice trials with gradually increasing difficulty to a deadline of 2 seconds:
+Practice trials with gradually increasing difficulty to a deadline of 2 seconds:  
 IV_practice.py
 
 100 experimental trials:  
