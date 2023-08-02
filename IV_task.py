@@ -13,7 +13,7 @@ from IV_functions import (input_dialog, open_window, load_joystick, make_vis_sti
                             start_splash, bonus_screen,iti_phase, get_serial_port, wait4tr_start, config_eyetracker)
 from os import chdir, path
 import pickle
-import pylink
+#import pylink
 #from EyeLinkCoreGraphicsPsychoPy import EyeLinkCoreGraphicsPsychoPy
 
 chdir('directory/to/where/code/is/saved')
