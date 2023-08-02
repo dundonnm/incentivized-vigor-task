@@ -1,7 +1,7 @@
 **BEFORE RUNNING CODE:**
 
 - install the [latest version of PsychoPy](https://www.psychopy.org/)  
-- make sure dependencies are installed and accessible in your env: numpy, pandas, pickle, os  
+- make sure the following dependencies are installed and accessible in your env: numpy, pandas, pickle, os  
 - change string in line 19 in IV_task.py to your local directory  
 - set the desired trial time limit on line 35 of IV_task.py, we use 1.87 seconds for our setup ("RT_crit":1.87)
 
