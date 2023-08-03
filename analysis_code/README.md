@@ -10,7 +10,7 @@ makeDF.py
 
 **VARIABLES EXTRACTED**
 
-makeDF.py will output a csv in tidydata format (fix url: https://vita.had.co.nz/papers/tidy-data.pdf) with the following columns:  
+makeDF.py will output a csv in [tidydata format](https://vita.had.co.nz/papers/tidy-data.pdf) with the following columns:  
 
 sub - enumerated subject number  
 sub_orig - original subject ID  
