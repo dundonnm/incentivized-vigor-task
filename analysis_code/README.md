@@ -5,7 +5,7 @@
 - make sure the following dependencies are installed and accessible in your env: numpy, pandas, pickle, os, glob  
 - change string in line 15 in makeDF.py to your local directory, where data are saved  
 
-**RUNNING CODE:**
+**RUNNING CODE:**  
 makeDF.py
 
 **VARIABLES EXTRACTED**
