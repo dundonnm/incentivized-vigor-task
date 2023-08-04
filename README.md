@@ -3,4 +3,4 @@ A python programme for a task using a joystick to make speeded reaches to cued t
 
 ![image](https://github.com/dundonnm/incentivized-vigor-task/blob/main/task_code/images/drawing.svg)
 
-[![DOI](https://zenodo.org/badge/673915812.svg)](https://zenodo.org/badge/latestdoi/673915812)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8216235.svg)](https://doi.org/10.5281/zenodo.8216235)
